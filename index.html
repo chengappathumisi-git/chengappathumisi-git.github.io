@@ -30,6 +30,11 @@
     .tab button.home { color: green; }
     .tab button.about { color: blue; }
     .tab button.Services { color: purple; }
+    .tab button.Testimonials { color: black; }
+     .tab button.Community { color: purple; }
+     .tab button.Photo Gallery { color: purple; }
+    .tab button.Video Gallery { color: purple; }
+    .tab button.Useful Info { color: purple; }
     .tab button.contact { color: red; }
 
     /* Hover effect */
@@ -60,7 +65,8 @@
 <div class="tab">
   <button class="tablinks home" onclick="openTab(event, 'Home')">Home</button>
   <button class="tablinks about" onclick="openTab(event, 'About')">About</button>
-  <button class="tablinks Services" onclick="openTab(event, 'Services')">Services</button>
+    <button class="tablinks Services" onclick="openTab(event, 'Services')">Services</button>
+   <button class="tablinks Services" onclick="openTab(event, 'Testimonials')">Testimonials</button>
   <button class="tablinks contact" onclick="openTab(event, 'Contact')">Contact</button>
 </div>
 
@@ -80,6 +86,11 @@
   <h3>Services</h3>
   <p>Weightloss</p>
   <p>PCOS,PCOD</p>
+</div>
+  <div id="Testimonials" class="tabcontent">
+  <h3>Testimonials</h3>
+  <p>client1</p>
+  <p>client2</p>
 </div>
 <div id="Contact" class="tabcontent">
   <h3>Contact</h3>
