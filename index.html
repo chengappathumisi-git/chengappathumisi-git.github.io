@@ -1,166 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chengappa Thumisi - Professional CV</title>
-<style>
-  body {
-    font-family: "Segoe UI", Roboto, sans-serif;
-    color: #222;
-    background: #f9f9f9;
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 40px 60px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-radius: 12px;
-  }
-  h1 {
-    text-align: center;
-    color: #800000;
-    margin-bottom: 5px;
-  }
-  h2 {
-    color: #800000;
-    border-bottom: 2px solid #800000;
-    padding-bottom: 4px;
-    margin-top: 30px;
-  }
-  p, li {
-    line-height: 1.6;
-  }
-  .contact {
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 25px;
-  }
-  .section {
-    margin-bottom: 15px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 8px 10px;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-  }
-  th {
-    background: #f0f0f0;
-  }
-  ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chengappa Thumisi — CV</title>
+  <style>
+    :root{--maroon:#800000;--muted:#6b6b6b;--max-width:820px}
+    body{font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;margin:0;background:#f4f6f8;color:#111}
+    .container{max-width:var(--max-width);margin:28px auto;background:#fff;padding:28px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+    header{position:relative;padding-top:16px;padding-bottom:10px;text-align:center}
+    .logo{position:absolute;left:20px;top:18px;width:72px}
+    .photo{width:120px;height:140px;border-radius:6px;object-fit:cover;border:3px solid var(--maroon);display:block;margin:0 auto}
+    h1{font-size:22px;color:var(--maroon);margin:12px 0 4px 0}
+    .designation{font-weight:600;color:#333;margin-bottom:8px}
+    .contact{font-size:13px;color:var(--muted);text-align:center;margin-bottom:8px}
+    .divider{height:3px;background:linear-gradient(90deg,var(--maroon),#aa3a3a);width:100%;margin:14px 0;border-radius:2px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    section{padding:6px 2px}
+    h2{color:var(--maroon);font-size:14px;margin:6px 0 8px 0}
+    p{margin:4px 0;font-size:13px;color:#222;line-height:1.3}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    td,th{padding:6px 8px;vertical-align:top}
+    th{background:var(--maroon);color:#fff;font-weight:600;text-align:left}
+    .two-col{display:flex;gap:18px}
+    .col{flex:1}
+    ul{margin:6px 0 8px 18px}
+    li{margin-bottom:6px}
+    .muted{color:var(--muted);font-size:12px}
+    footer{margin-top:10px;text-align:center;color:var(--muted);font-size:12px}
+    @media(min-width:720px){.grid{grid-template-columns:1fr} .two-col{gap:28px}}
+  </style>
 </head>
-
 <body>
   <div class="container">
-    <h1>Chengappa Thumisi</h1>
-    <div class="contact">
-      Senior Technical Superintendent, Department of Physics<br>
-      Indian Institute of Technology Hyderabad, Telangana – 502284, India<br>
-      📧 chengappa.thumisi@phy.iith.ac.in  📞 Office: +91 40 2301 8647
-    </div>
+    <header>
+      <img src="/mnt/data/images.png" alt="IIT Hyderabad" class="logo">
+      <img src="/mnt/data/1580032936922_DSC06373.JPG" alt="Chengappa Thumisi" class="photo">
+      <h1>Chengappa Thumisi</h1>
+      <div class="designation">Senior Technical Superintendent, Department of Physics — Indian Institute of Technology Hyderabad</div>
+      <div class="contact">Department of Physics, IIT Hyderabad, Kandi, Sangareddy District, Telangana — 502284 | 📧 <a href="mailto:chengappa.thumisi@phy.iith.ac.in">chengappa.thumisi@phy.iith.ac.in</a> | ☎️ +91 91774 66875</div>
+    </header>
 
-    <h2>Professional Summary</h2>
-    <p>
-      Dedicated and skilled Senior Technical Superintendent with over 14 years of progressive experience in managing and maintaining advanced research and teaching laboratories. Expertise spans microscopy, spectroscopy, and magneto-optical equipment, with hands-on experience in laboratory coordination, training, experimental setups, and maintenance operations. Known for technical precision, proactive problem-solving, and collaborative support for faculty and student research initiatives. Adept at balancing technical responsibilities with administrative tasks including procurement, record management, and AMC coordination.
-    </p>
+    <div class="divider" aria-hidden="true"></div>
 
-    <h2>Personal Details</h2>
-    <p>
-       Place of Birth: Pathikonda, Andhra Pradesh, India<br>
-       Nationality: Indian</p>
+    <main class="grid" role="main">
+      <section>
+        <h2>Professional Summary</h2>
+        <p>Dedicated and skilled Senior Technical Superintendent with over 14 years of progressive experience in managing and maintaining advanced research and teaching laboratories. Expertise spans microscopy, spectroscopy, and magneto-optical equipment, with hands-on experience in laboratory coordination, training, experimental setups, and maintenance operations. Known for technical precision, proactive problem-solving, and collaborative support for faculty and student research initiatives. Adept at balancing technical responsibilities with administrative tasks including procurement, record management, and AMC coordination.</p>
+      </section>
 
-    <h2>Educational Qualifications</h2>
-    <table>
-      <tr><th>Degree</th><th>University / Institution</th><th>Year</th><th>Marks / Grade</th></tr>
-      <tr><td>M.Sc. (Physics)</td><td>Sri Venkateswara University, Tirupati</td><td>2013</td><td>82%</td></tr>
-      <tr><td>P.G.D.C.A.</td><td>Tech Edge Solutions, Palamaner</td><td>2008</td><td>A Grade</td></tr>
-      <tr><td>B.Sc. (Physics)</td><td>Sri Venkateswara University, Tirupati</td><td>2008</td><td>84%</td></tr>
-      <tr><td>H.S.E.</td><td>Board of Intermediate Education, A.P.</td><td>2005</td><td>86%</td></tr>
-      <tr><td>S.S.C.</td><td>Board of Secondary Education, A.P.</td><td>2003</td><td>88%</td></tr>
-    </table>
+      <section>
+        <h2>Educational Qualifications</h2>
+        <table>
+          <thead>
+            <tr><th>Degree</th><th>University / Institution</th><th>Year</th><th>Marks / Grade</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>M.Sc. (Physics)</td><td>Sri Venkateswara University, Tirupati, A.P.</td><td>2013</td><td>82%</td></tr>
+            <tr><td>P.G.D.C.A.</td><td>Tech Edge Solutions, Palamaner, A.P.</td><td>2008</td><td>A Grade</td></tr>
+            <tr><td>B.Sc. (Physics)</td><td>Sri Venkateswara University, Tirupati, A.P.</td><td>2008</td><td>84%</td></tr>
+            <tr><td>H.S.E.</td><td>Board of Intermediate Education, A.P.</td><td>2005</td><td>86%</td></tr>
+            <tr><td>S.S.C.</td><td>Board of Secondary Education, A.P.</td><td>2003</td><td>88%</td></tr>
+          </tbody>
+        </table>
+      </section>
 
-    <h2>Professional Experience (14+ Years)</h2>
-    <p><strong>Indian Institute of Technology Hyderabad (IITH)</strong><br>
-    (An autonomous institution under the Department of Education, Government of India)</p>
-    <table>
-      <tr><th>Designation</th><th>Tenure</th></tr>
-      <tr><td>Senior Technical Superintendent</td><td>Apr 2024 – Present</td></tr>
-      <tr><td>Technical Superintendent</td><td>Nov 2020 – Apr 2024</td></tr>
-      <tr><td>Junior Laboratory Assistant</td><td>Aug 2015 – Nov 2020</td></tr>
-      <tr><td>Senior Project Technician</td><td>May 2015 – Aug 2015</td></tr>
-      <tr><td>Project Technician</td><td>May 2013 – May 2015</td></tr>
-      <tr><td>Senior Project Assistant</td><td>Apr 2011 – Jul 2011</td></tr>
-      <tr><td>Project Assistant</td><td>Jul 2008 – Mar 2011</td></tr>
-    </table>
+      <section>
+        <h2>Professional Experience (Condensed)</h2>
+        <div class="two-col">
+          <div class="col">
+            <p><strong>Indian Institute of Technology Hyderabad (IITH)</strong><br><span class="muted">(An autonomous institution under the Department of Education, Government of India)</span></p>
+          </div>
+          <div class="col">
+            <table>
+              <tbody>
+                <tr><td><strong>Senior Technical Superintendent</strong></td><td>Apr 2024 &ndash; Present</td></tr>
+                <tr><td><strong>Technical Superintendent</strong></td><td>Nov 2020 &ndash; Apr 2024</td></tr>
+                <tr><td><strong>Junior Laboratory Assistant</strong></td><td>Aug 2015 &ndash; Nov 2020</td></tr>
+                <tr><td><strong>Senior Project Technician</strong></td><td>May 2015 &ndash; Aug 2015</td></tr>
+                <tr><td><strong>Project Technician</strong></td><td>May 2013 &ndash; May 2015</td></tr>
+                <tr><td><strong>Senior Project Assistant</strong></td><td>Apr 2011 &ndash; Jul 2011</td></tr>
+                <tr><td><strong>Project Assistant</strong></td><td>Jul 2008 &ndash; Mar 2011</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-    <h2>Technical Expertise</h2>
-    <ul>
-      <li>Operation and maintenance of advanced Microscopy, Spectroscopy, and Magneto-Optical instruments.</li>
-      <li>Major equipment handled: Atomic Force Microscope (Park Systems), Nano MOKE (DMO), Zeta 3D Optical Profilometer.</li>
-      <li>Hands-on experience with UG and PG Physics laboratory experiments.</li>
-      <li>Simulation work in Ion Beam Optics and Optical Systems.</li>
-      <li>Skilled in technical documentation, inventory management, and laboratory coordination.</li>
-    </ul>
+      <section>
+        <h2>Technical Expertise</h2>
+        <ul>
+          <li>Operation and maintenance of Microscopy, Spectroscopy, and Magneto-Optical instruments.</li>
+          <li>Major equipment handled: Atomic Force Microscope (Park Systems); Nano MOKE (DMO); Zeta 3D Optical Profilometer.</li>
+          <li>Hands-on experience with undergraduate and postgraduate physics laboratory experiments.</li>
+          <li>Simulation work related to Ion Beam Optics and Optical Systems.</li>
+          <li>Skilled in technical documentation, inventory management, and laboratory coordination.</li>
+        </ul>
+      </section>
 
-    <h2>Research & Teaching Laboratory Responsibilities</h2>
-    <strong>Research Laboratories:</strong>
-    <ul>
-      <li>Coordinating with equipment suppliers for installation, training, and maintenance.</li>
-      <li>Performing measurements as per research requirements and faculty approval.</li>
-      <li>Managing documentation, AMC, UPS, and logistics (export/import) for lab equipment.</li>
-      <li>Exploring advanced capabilities and process optimization for research setups.</li>
-    </ul>
+      <section>
+        <h2>Computer Skills</h2>
+        <ul>
+          <li><strong>Operating Systems:</strong> Windows, Linux</li>
+          <li><strong>Programming / Simulation:</strong> MATLAB, Python (basic), Origin, COMSOL (basic)</li>
+          <li><strong>Office & Documentation:</strong> MS Office Suite, Google Workspace, LaTeX</li>
+          <li><strong>Data Analysis & Visualization:</strong> Excel (advanced), OriginPro, ImageJ</li>
+          <li><strong>Database & Inventory:</strong> ERP systems, Lab data record management</li>
+          <li><strong>General:</strong> File versioning, report formatting, document automation, online collaboration tools</li>
+        </ul>
+      </section>
 
-    <strong>Teaching Laboratories:</strong>
-    <ul>
-      <li>Setting up and maintaining experimental apparatus for academic sessions.</li>
-      <li>Preparing and updating laboratory manuals.</li>
-      <li>Troubleshooting and repairing instruments used in teaching labs.</li>
-      <li>Maintaining purchase and service records.</li>
-      <li>Supporting online laboratory courses (experiment video recordings, demonstrations).</li>
-      <li>Providing technical guidance for student projects and experimental design.</li>
-    </ul>
+      <section>
+        <h2>Key Strengths</h2>
+        <ul>
+          <li>Strong technical and analytical problem-solving ability.</li>
+          <li>Proven capacity to manage multiple lab facilities efficiently.</li>
+          <li>Effective communicator and team collaborator.</li>
+          <li>Committed to maintaining high laboratory standards and supporting institutional research excellence.</li>
+        </ul>
+      </section>
 
-    <h2>Experimental Techniques Developed</h2>
-    <ul><li>Wet-etching technique for preparation of sharp Pt/Ir and Tungsten tips.</li></ul>
+    </main>
 
-    <h2>Conferences & Courses Attended</h2>
-    <ul>
-      <li>Energy Conversion and Storage Devices – 2021, FDP, IIT Hyderabad.</li>
-      <li>National Seminar on Advanced Materials Characterization Techniques – 2013, SV University, Tirupati.</li>
-      <li>Short Term Course on Photonic Materials: Fabrication, Characterization and Applications – 2014, SV University.</li>
-      <li>Refresher Course in Experimental Physics – 2011, IIT Madras.</li>
-    </ul>
-
-    <h2>Merit Scholarships</h2>
-    <ul>
-      <li>Merit Scholarship by Basic Research Education and Development Society (BREAD), Hyderabad (2005–2008).</li>
-      <li>Scholarship by Government of Andhra Pradesh (2005–2008 and 2011–2013).</li>
-    </ul>
-
-    <h2>Key Strengths</h2>
-    <ul>
-      <li>Strong technical and analytical problem-solving ability.</li>
-      <li>Proven capacity to manage multiple lab facilities efficiently.</li>
-      <li>Effective communicator and team collaborator.</li>
-      <li>Committed to maintaining high laboratory standards and supporting institutional research excellence.</li>
-    </ul>
-
-    <h2>Computer Skills</h2>
-    <ul>
-      <li><strong>Operating Systems:</strong> Windows, Linux</li>
-      <li><strong>Programming / Simulation:</strong> MATLAB, Python (basic), Origin, COMSOL (basic)</li>
-      <li><strong>Office Tools:</strong> MS Office Suite, Google Workspace, LaTeX</li>
-      <li><strong>Data Analysis & Visualization:</strong> Excel (advanced), OriginPro, ImageJ</li>
-      <li><strong>Database & Inventory:</strong> ERP systems, Lab data management</li>
+    <footer>
+      <div class="muted">Curriculum Vitae — Chengappa Thumisi • Indian Institute of Technology Hyderabad</div>
+    </footer>
+  </div>
+</body>
+</html>
