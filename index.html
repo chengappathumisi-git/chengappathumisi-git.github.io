@@ -10,7 +10,7 @@
     .container{max-width:var(--max-width);margin:28px auto;background:#fff;padding:28px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
     header{position:relative;padding-top:16px;padding-bottom:10px;text-align:center}
     .logo{position:absolute;left:20px;top:18px;width:72px}
-    .photo{width:120px;height:140px;border-radius:6px;object-fit:cover;border:3px solid var(--maroon);display:block;margin:0 auto}
+    .photo{width:200px;height:250px;border-radius:6px;object-fit:cover;border:3px solid var(--maroon);display:block;margin:0 auto}
     h1{font-size:22px;color:var(--maroon);margin:12px 0 4px 0}
     .designation{font-weight:600;color:#333;margin-bottom:8px}
     .contact{font-size:13px;color:var(--muted);text-align:center;margin-bottom:8px}
@@ -24,8 +24,19 @@
     th{background:var(--maroon);color:#fff;font-weight:600;text-align:left}
     .two-col{display:flex;gap:18px}
     .col{flex:1}
-    ul{margin:6px 0 8px 18px}
-    li{margin-bottom:6px}
+
+    /* ===== Uniform list styling for all sections ===== */
+    section ul{
+      margin:6px 0 8px 18px;
+      padding:0;
+    }
+    section li{
+      font-size:13px;
+      color:#222;
+      line-height:1.3;
+      margin-bottom:6px;
+    }
+
     .muted{color:var(--muted);font-size:12px}
     footer{margin-top:10px;text-align:center;color:var(--muted);font-size:12px}
     @media(min-width:720px){.grid{grid-template-columns:1fr} .two-col{gap:28px}}
@@ -35,24 +46,28 @@
   <div class="container">
     <header>
       <img src="images/images.png" alt="IIT Hyderabad" class="logo">
-           <img src="images/CT.jpg" alt="Girl in a jacket" style="width:200px;height:250px;">
+      <img src="images/CT.jpg" alt="Profile Photo" class="photo">
       <h1>Chengappa Thumisi</h1>
       <div class="designation">Senior Technical Superintendent</div>
-      <div class="contact">Department of Physics, IIT Hyderabad, Kandi, Sangareddy District, Telangana — 502284<br> | 📧 <a href="mailto:chengappa.thumisi@phy.iith.ac.in">chengappa.thumisi@phy.iith.ac.in</a> | ☎️ +91 91774 66875</div>
+      <div class="contact">
+        Department of Physics, IIT Hyderabad, Kandi, Sangareddy District, Telangana — 502284<br>
+        📧 <a href="mailto:chengappa.thumisi@phy.iith.ac.in">chengappa.thumisi@phy.iith.ac.in</a> | ☎️ +91 91774 66875
+      </div>
     </header>
 
     <div class="divider" aria-hidden="true"></div>
 
     <main class="grid" role="main">
-       <section>
-        <h2>Technical Expertise</h2>
-         <ul>
-  <li>Multimodal Scanning probe Microscope (A.F.M)</li>
-  <li>Ultra High Sensitive MOKE Magnetometer (NanoMOKE)</li>
-  <li>Zeta 3D-Profilometer</li>
-</ul>
-        
+
+      <section>
+        <h2>Core Instruments & Facilities</h2>
+        <ul>
+          <li>Multimodal Scanning Probe Microscope (AFM)</li>
+          <li>Ultra High Sensitivity MOKE Magnetometer (NanoMOKE)</li>
+          <li>Zeta 3D Optical Profilometer</li>
+        </ul>
       </section>
+
       <section>
         <h2>Professional Summary</h2>
         <p>Dedicated and skilled Senior Technical Superintendent with over 14 years of progressive experience in managing and maintaining advanced research and teaching laboratories. Expertise spans microscopy, spectroscopy, and magneto-optical equipment, with hands-on experience in laboratory coordination, training, experimental setups, and maintenance operations. Known for technical precision, proactive problem-solving, and collaborative support for faculty and student research initiatives. Adept at balancing technical responsibilities with administrative tasks including procurement, record management, and AMC coordination.</p>
@@ -69,71 +84,4 @@
             <tr><td>P.G.D.C.A.</td><td>Tech Edge Solutions, Palamaner, A.P.</td><td>2008</td><td>A Grade</td></tr>
             <tr><td>B.Sc. (Physics)</td><td>Sri Venkateswara University, Tirupati, A.P.</td><td>2008</td><td>84%</td></tr>
             <tr><td>H.S.E.</td><td>Board of Intermediate Education, A.P.</td><td>2005</td><td>86%</td></tr>
-            <tr><td>S.S.C.</td><td>Board of Secondary Education, A.P.</td><td>2003</td><td>88%</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Professional Experience (Condensed)</h2>
-        <div class="two-col">
-          <div class="col">
-            <p><strong>Indian Institute of Technology Hyderabad (IITH)</strong><br><span class="muted">(An autonomous institution under the Department of Education, Government of India)</span></p>
-          </div>
-          <div class="col">
-            <table>
-              <tbody>
-                <tr><td><strong>Senior Technical Superintendent</strong></td><td>Apr 2024 &ndash; Present</td></tr>
-                <tr><td><strong>Technical Superintendent</strong></td><td>Nov 2020 &ndash; Apr 2024</td></tr>
-                <tr><td><strong>Junior Laboratory Assistant</strong></td><td>Aug 2015 &ndash; Nov 2020</td></tr>
-                <tr><td><strong>Senior Project Technician</strong></td><td>May 2015 &ndash; Aug 2015</td></tr>
-                <tr><td><strong>Project Technician</strong></td><td>May 2013 &ndash; May 2015</td></tr>
-                <tr><td><strong>Senior Project Assistant</strong></td><td>Apr 2011 &ndash; Jul 2011</td></tr>
-                <tr><td><strong>Project Assistant</strong></td><td>Jul 2008 &ndash; Mar 2011</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Technical Expertise</h2>
-        <ul>
-          <li>Operation and maintenance of Microscopy, Spectroscopy, and Magneto-Optical instruments.</li>
-          <li>Major equipment handled: Atomic Force Microscope (Park Systems); Nano MOKE (DMO); Zeta 3D Optical Profilometer.</li>
-          <li>Hands-on experience with undergraduate and postgraduate physics laboratory experiments.</li>
-          <li>Simulation work related to Ion Beam Optics and Optical Systems.</li>
-          <li>Skilled in technical documentation, inventory management, and laboratory coordination.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Computer Skills</h2>
-        <ul>
-          <li><strong>Operating Systems:</strong> Windows, Linux</li>
-          <li><strong>Programming / Simulation:</strong> MATLAB, Python (basic), Origin, COMSOL (basic)</li>
-          <li><strong>Office & Documentation:</strong> MS Office Suite, Google Workspace, LaTeX</li>
-          <li><strong>Data Analysis & Visualization:</strong> Excel (advanced), OriginPro, ImageJ</li>
-          <li><strong>Database & Inventory:</strong> ERP systems, Lab data record management</li>
-          <li><strong>General:</strong> File versioning, report formatting, document automation, online collaboration tools</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Key Strengths</h2>
-        <ul>
-          <li>Strong technical and analytical problem-solving ability.</li>
-          <li>Proven capacity to manage multiple lab facilities efficiently.</li>
-          <li>Effective communicator and team collaborator.</li>
-          <li>Committed to maintaining high laboratory standards and supporting institutional research excellence.</li>
-        </ul>
-      </section>
-
-    </main>
-
-    <footer>
-      <div class="muted">Curriculum Vitae — Chengappa Thumisi • Indian Institute of Technology Hyderabad</div>
-    </footer>
-  </div>
-</body>
-</html>
+            <tr><td>S.S.C.</td><td
