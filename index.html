@@ -1,154 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chengappa Thumisi — CV</title>
-  <style>
-    :root{--maroon:#800000;--muted:#6b6b6b;--max-width:820px}
-    body{font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;margin:0;background:#f4f6f8;color:#111}
-    .container{max-width:var(--max-width);margin:28px auto;background:#fff;padding:28px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
-    header{position:relative;padding-top:16px;padding-bottom:10px;text-align:center}
-    .logo{position:absolute;left:20px;top:18px;width:72px}
-    .photo{width:200px;height:250px;border-radius:6px;object-fit:cover;border:3px solid var(--maroon);display:block;margin:0 auto}
-    h1{font-size:22px;color:var(--maroon);margin:12px 0 4px 0}
-    .designation{font-weight:600;color:#333;margin-bottom:8px}
-    .contact{font-size:13px;color:var(--muted);text-align:center;margin-bottom:8px}
-    .divider{height:3px;background:linear-gradient(90deg,var(--maroon),#aa3a3a);width:100%;margin:14px 0;border-radius:2px}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px}
-    section{padding:6px 2px}
-    h2{color:var(--maroon);font-size:14px;margin:6px 0 8px 0}
-    p{margin:4px 0;font-size:13px;color:#222;line-height:1.3}
-    table{width:100%;border-collapse:collapse;font-size:13px}
-    td,th{padding:6px 8px;vertical-align:top}
-    th{background:var(--maroon);color:#fff;font-weight:600;text-align:left}
-    .two-col{display:flex;gap:18px}
-    .col{flex:1}
-
-    /* ===== Uniform list styling for all sections ===== */
-    section ul{
-      margin:6px 0 8px 18px;
-      padding:0;
-    }
-    section li{
-      font-size:13px;
-      color:#222;
-      line-height:1.3;
-      margin-bottom:6px;
-    }
-
-    .muted{color:var(--muted);font-size:12px}
-    footer{margin-top:10px;text-align:center;color:var(--muted);font-size:12px}
-    @media(min-width:720px){.grid{grid-template-columns:1fr} .two-col{gap:28px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .date-header {
+            background-color: #e6f3ff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="images/images.png" alt="IIT Hyderabad" class="logo">
-      <img src="images/CT.jpg" alt="Profile Photo" class="photo">
-      <h1>Chengappa Thumisi</h1>
-      <div class="designation">Senior Technical Superintendent</div>
-      <div class="contact">
-        Department of Physics, IIT Hyderabad, Kandi, Sangareddy District, Telangana — 502284<br>
-        📧 <a href="mailto:chengappa.thumisi@phy.iith.ac.in">chengappa.thumisi@phy.iith.ac.in</a> | ☎️ +91 91774 66875
-      </div>
-    </header>
+    <table id="plannerTable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Task Accomplished</th>
+                <th>People Contacted</th>
+                <th>Money In/Out</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody id="plannerBody">
+        </tbody>
+    </table>
 
-    <div class="divider" aria-hidden="true"></div>
-
-    <main class="grid" role="main">
-
-      <section>
-        <h2>Core Instruments & Facilities</h2>
-        <ul>
-          <li>Multimodal Scanning Probe Microscope (AFM)</li>
-          <li>Ultra High Sensitivity MOKE Magnetometer (NanoMOKE)</li>
-          <li>Zeta 3D Optical Profilometer</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Professional Summary</h2>
-        <p>Dedicated and skilled Senior Technical Superintendent with over 14 years of progressive experience in managing and maintaining advanced research and teaching laboratories. Expertise spans microscopy, spectroscopy, and magneto-optical equipment, with hands-on experience in laboratory coordination, training, experimental setups, and maintenance operations. Known for technical precision, proactive problem-solving, and collaborative support for faculty and student research initiatives. Adept at balancing technical responsibilities with administrative tasks including procurement, record management, and AMC coordination.</p>
-      </section>
-
-      <section>
-        <h2>Educational Qualifications</h2>
-        <table>
-          <thead>
-            <tr><th>Degree</th><th>University / Institution</th><th>Year</th><th>Marks / Grade</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>M.Sc. (Physics)</td><td>Sri Venkateswara University, Tirupati, A.P.</td><td>2013</td><td>82%</td></tr>
-            <tr><td>P.G.D.C.A.</td><td>Tech Edge Solutions, Palamaner, A.P.</td><td>2008</td><td>A Grade</td></tr>
-            <tr><td>B.Sc. (Physics)</td><td>Sri Venkateswara University, Tirupati, A.P.</td><td>2008</td><td>84%</td></tr>
-            <tr><td>H.S.E.</td><td>Board of Intermediate Education, A.P.</td><td>2005</td><td>86%</td></tr>
-            <tr><td>S.S.C.</td><td>Board of Secondary Education, A.P.</td><td>2003</td><td>88%</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Professional Experience (Condensed)</h2>
-        <div class="two-col">
-          <div class="col">
-            <p><strong>Indian Institute of Technology Hyderabad (IITH)</strong><br>
-            <span class="muted">(An autonomous institution under the Department of Education, Government of India)</span></p>
-          </div>
-          <div class="col">
-            <table>
-              <tbody>
-                <tr><td><strong>Senior Technical Superintendent</strong></td><td>Apr 2024 – Present</td></tr>
-                <tr><td><strong>Technical Superintendent</strong></td><td>Nov 2020 – Apr 2024</td></tr>
-                <tr><td><strong>Junior Laboratory Assistant</strong></td><td>Aug 2015 – Nov 2020</td></tr>
-                <tr><td><strong>Senior Project Technician</strong></td><td>May 2015 – Aug 2015</td></tr>
-                <tr><td><strong>Project Technician</strong></td><td>May 2013 – May 2015</td></tr>
-                <tr><td><strong>Senior Project Assistant</strong></td><td>Apr 2011 – Jul 2011</td></tr>
-                <tr><td><strong>Project Assistant</strong></td><td>Jul 2008 – Mar 2011</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Technical Expertise</h2>
-        <ul>
-          <li>Operation and maintenance of Microscopy, Spectroscopy, and Magneto‑Optical instruments.</li>
-          <li>Major equipment handled: AFM (Park Systems), Nano MOKE (DMO), Zeta 3D Optical Profilometer.</li>
-          <li>Hands-on experience with undergraduate and postgraduate physics laboratory experiments.</li>
-          <li>Simulation work related to Ion Beam Optics and Optical Systems.</li>
-          <li>Technical documentation, inventory management, and laboratory coordination.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Computer Skills</h2>
-        <ul>
-          <li><strong>Operating Systems:</strong> Windows, Linux</li>
-          <li><strong>Programming / Simulation:</strong> MATLAB, Python (basic), Origin, COMSOL (basic)</li>
-          <li><strong>Office & Documentation:</strong> MS Office, Google Workspace, LaTeX</li>
-          <li><strong>Data Analysis:</strong> Excel (advanced), OriginPro, ImageJ</li>
-          <li><strong>ERP & Records:</strong> Inventory systems, laboratory data management</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Key Strengths</h2>
-        <ul>
-          <li>Strong technical and analytical problem-solving ability.</li>
-          <li>Efficient management of multiple laboratory facilities.</li>
-          <li>Clear communicator and collaborative team member.</li>
-          <li>Commitment to high laboratory and safety standards.</li>
-        </ul>
-      </section>
-
-    </main>
-
-    <footer>
-      <div class="muted">Curriculum Vitae — Chengappa Thumisi • Indian Institute of Technology Hyderabad</div>
-    </footer>
-  </div>
+    <script>
+        const dates = ['2025-12-16', '2025-12-17', '2025-12-18', '2025-12-19', '2025-12-20', '2025-12-21', '2025-12-22', '2025-12-23', '2025-12-24', '2025-12-25', '2025-12-26', '2025-12-27', '2025-12-28', '2025-12-29', '2025-12-30', '2025-12-31', '2026-01-01', '2026-01-02', '2026-01-03', '2026-01-04', '2026-01-05', '2026-01-06', '2026-01-07', '2026-01-08', '2026-01-09', '2026-01-10', '2026-01-11', '2026-01-12', '2026-01-13', '2026-01-14', '2026-01-15', '2026-01-16', '2026-01-17', '2026-01-18', '2026-01-19', '2026-01-20', '2026-01-21', '2026-01-22', '2026-01-23', '2026-01-24', '2026-01-25', '2026-01-26', '2026-01-27', '2026-01-28', '2026-01-29', '2026-01-30', '2026-01-31', '2026-02-01', '2026-02-02', '2026-02-03', '2026-02-04', '2026-02-05', '2026-02-06', '2026-02-07', '2026-02-08', '2026-02-09', '2026-02-10', '2026-02-11', '2026-02-12', '2026-02-13', '2026-02-14', '2026-02-15', '2026-02-16', '2026-02-17', '2026-02-18', '2026-02-19', '2026-02-20', '2026-02-21', '2026-02-22', '2026-02-23', '2026-02-24', '2026-02-25', '2026-02-26', '2026-02-27', '2026-02-28', '2026-03-01', '2026-03-02', '2026-03-03', '2026-03-04', '2026-03-05', '2026-03-06', '2026-03-07', '2026-03-08', '2026-03-09', '2026-03-10', '2026-03-11', '2026-03-12', '2026-03-13', '2026-03-14', '2026-03-15', '2026-03-16', '2026-03-17', '2026-03-18', '2026-03-19', '2026-03-20', '2026-03-21', '2026-03-22', '2026-03-23', '2026-03-24', '2026-03-25', '2026-03-26', '2026-03-27', '2026-03-28', '2026-03-29', '2026-03-30', '2026-03-31', '2026-04-01', '2026-04-02', '2026-04-03', '2026-04-04', '2026-04-05', '2026-04-06', '2026-04-07', '2026-04-08', '2026-04-09', '2026-04-10', '2026-04-11', '2026-04-12', '2026-04-13', '2026-04-14', '2026-04-15', '2026-04-16', '2026-04-17', '2026-04-18', '2026-04-19', '2026-04-20', '2026-04-21', '2026-04-22', '2026-04-23', '2026-04-24', '2026-04-25', '2026-04-26', '2026-04-27', '2026-04-28', '2026-04-29', '2026-04-30', '2026-05-01', '2026-05-02', '2026-05-03', '2026-05-04', '2026-05-05', '2026-05-06', '2026-05-07', '2026-05-08', '2026-05-09', '2026-05-10', '2026-05-11', '2026-05-12', '2026-05-13', '2026-05-14', '2026-05-15', '2026-05-16', '2026-05-17', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21', '2026-05-22', '2026-05-23', '2026-05-24', '2026-05-25', '2026-05-26', '2026-05-27', '2026-05-28', '2026-05-29', '2026-05-30', '2026-05-31', '2026-06-01', '2026-06-02', '2026-06-03', '2026-06-04', '2026-06-05', '2026-06-06', '2026-06-07', '2026-06-08', '2026-06-09', '2026-06-10', '2026-06-11', '2026-06-12', '2026-06-13', '2026-06-14', '2026-06-15', '2026-06-16', '2026-06-17', '2026-06-18', '2026-06-19', '2026-06-20', '2026-06-21', '2026-06-22', '2026-06-23', '2026-06-24', '2026-06-25', '2026-06-26', '2026-06-27', '2026-06-28', '2026-06-29', '2026-06-30', '2026-07-01', '2026-07-02', '2026-07-03', '2026-07-04', '2026-07-05', '2026-07-06', '2026-07-07', '2026-07-08', '2026-07-09', '2026-07-10', '2026-07-11', '2026-07-12', '2026-07-13', '2026-07-14', '2026-07-15', '2026-07-16', '2026-07-17', '2026-07-18', '2026-07-19', '2026-07-20', '2026-07-21', '2026-07-22', '2026-07-23', '2026-07-24', '2026-07-25', '2026-07-26', '2026-07-27', '2026-07-28', '2026-07-29', '2026-07-30', '2026-07-31', '2026-08-01', '2026-08-02', '2026-08-03', '2026-08-04', '2026-08-05', '2026-08-06', '2026-08-07', '2026-08-08', '2026-08-09', '2026-08-10', '2026-08-11', '2026-08-12', '2026-08-13', '2026-08-14', '2026-08-15', '2026-08-16', '2026-08-17', '2026-08-18', '2026-08-19', '2026-08-20', '2026-08-21', '2026-08-22', '2026-08-23', '2026-08-24', '2026-08-25', '2026-08-26', '2026-08-27', '2026-08-28', '2026-08-29', '2026-08-30', '2026-08-31', '2026-09-01', '2026-09-02', '2026-09-03', '2026-09-04', '2026-09-05', '2026-09-06', '2026-09-07', '2026-09-08', '2026-09-09', '2026-09-10', '2026-09-11', '2026-09-12', '2026-09-13', '2026-09-14', '2026-09-15', '2026-09-16', '2026-09-17', '2026-09-18', '2026-09-19', '2026-09-20', '2026-09-21', '2026-09-22', '2026-09-23', '2026-09-24', '2026-09-25', '2026-09-26', '2026-09-27', '2026-09-28', '2026-09-29', '2026-09-30', '2026-10-01', '2026-10-02', '2026-10-03', '2026-10-04', '2026-10-05', '2026-10-06', '2026-10-07', '2026-10-08', '2026-10-09', '2026-10-10', '2026-10-11', '2026-10-12', '2026-10-13', '2026-10-14', '2026-10-15', '2026-10-16', '2026-10-17', '2026-10-18', '2026-10-19', '2026-10-20', '2026-10-21', '2026-10-22', '2026-10-23', '2026-10-24', '2026-10-25', '2026-10-26', '2026-10-27', '2026-10-28', '2026-10-29', '2026-10-30', '2026-10-31', '2026-11-01', '2026-11-02', '2026-11-03', '2026-11-04', '2026-11-05', '2026-11-06', '2026-11-07', '2026-11-08', '2026-11-09', '2026-11-10', '2026-11-11', '2026-11-12', '2026-11-13', '2026-11-14', '2026-11-15', '2026-11-16', '2026-11-17', '2026-11-18', '2026-11-19', '2026-11-20', '2026-11-21', '2026-11-22', '2026-11-23', '2026-11-24', '2026-11-25', '2026-11-26', '2026-11-27', '2026-11-28', '2026-11-29', '2026-11-30', '2026-12-01', '2026-12-02', '2026-12-03', '2026-12-04', '2026-12-05', '2026-12-06', '2026-12-07', '2026-12-08', '2026-12-09', '2026-12-10', '2026-12-11', '2026-12-12', '2026-12-13', '2026-12-14', '2026-12-15', '2026-12-16', '2026-12-17', '2026-12-18', '2026-12-19', '2026-12-20', '2026-12-21', '2026-12-22', '2026-12-23', '2026-12-24', '2026-12-25', '2026-12-26', '2026-12-27', '2026-12-28', '2026-12-29', '2026-12-30', '2026-12-31'];
+        const tbody = document.getElementById('plannerBody');
+        
+        dates.forEach(date => {
+            // Add date header row
+            const headerRow = tbody.insertRow();
+            headerRow.className = 'date-header';
+            const headerCell = headerRow.insertCell(0);
+            headerCell.colSpan = 5;
+            headerCell.textContent = `Date: ${date}`;
+            
+            // Add time rows from 4AM to 12AM (00:00 next day, but up to 23:00)
+            for (let hour = 4; hour < 24; hour++) {
+                const row = tbody.insertRow();
+                let timeStr;
+                if (hour === 0) {
+                    timeStr = '12:00 AM';
+                } else if (hour === 12) {
+                    timeStr = '12:00 PM';
+                } else {
+                    const hour12 = hour % 12 || 12;
+                    const ampm = hour < 12 ? 'AM' : 'PM';
+                    timeStr = `${hour12}:00 ${ampm}`;
+                }
+                row.insertCell(0).textContent = timeStr;
+                row.insertCell(1); // Task
+                row.insertCell(2); // People
+                row.insertCell(3); // Money
+                row.insertCell(4); // Remarks
+            }
+        });
+    </script>
 </body>
 </html>
